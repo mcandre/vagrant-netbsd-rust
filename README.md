@@ -7,8 +7,7 @@ https://app.vagrantup.com/mcandre/boxes/vagrant-netbsd-rust
 # EXAMPLE
 
 ```console
-$ time vagrant up
-...
+$ vagrant up
 $ vagrant ssh -c "cd /vagrant && rustc hello.rs && ./hello"
 ...
 ```
