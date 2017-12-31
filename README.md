@@ -27,5 +27,5 @@ $ vagrant ssh -c "cd /vagrant && rustc hello.rs && ./hello"
 # EXPORT
 
 ```console
-$ vagrant destroy -f; vagrant up && vagrant package --output vagrant-netbsd-rust.box
+$ make vagrant-netbsd-rust.box
 ```
