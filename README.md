@@ -13,10 +13,16 @@ $ vagrant ssh -c "cd /vagrant && rustc hello.rs && ./hello"
 ...
 ```
 
-# REQUIREMENTS
+# RUNTIME REQUIREMENTS
 
 * [Vagrant](https://www.vagrantup.com)
-* A VM provider, such as [VirtualBox](https://www.virtualbox.org), [VMware](https://www.vmware.com), or [libvirt](https://libvirt.org)
+* The [VirtualBox](https://www.virtualbox.org) hypervisor provider
+
+# BUILDTIME REQUIREMENTS
+
+* [Vagrant](https://www.vagrantup.com)
+* The [VirtualBox](https://www.virtualbox.org) hypervisor provider
+* [make](https://www.gnu.org/software/make/)
 
 # EXPORT
 
