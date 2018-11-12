@@ -1,3 +1,3 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "mcandre/vagrant-netbsd-rust"
+    config.vm.box = "mcandre/vagrant-netbsd-rust"
 end
