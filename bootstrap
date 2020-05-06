@@ -1,4 +1,8 @@
 #!/bin/sh
+set -eu
+IFS="$(printf '%b_' '\n\t ')"
+IFS="${IFS%_}"
+
 su root -c "pkgin update && pkgin -y install mozilla-rootcerts wget clang" &&
     su root -c 'mozilla-rootcerts install' &&
     wget https://static.rust-lang.org/rustup/dist/x86_64-unknown-netbsd/rustup-init &&
