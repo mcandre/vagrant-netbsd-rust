@@ -1,7 +1,6 @@
 #!/bin/sh
+unset IFS
 set -eu
-IFS="$(printf '%b_' '\n\t ')"
-IFS="${IFS%_}"
 
 su root -c "pkgin update && pkgin -y install mozilla-rootcerts wget clang" &&
     su root -c 'mozilla-rootcerts install' &&
